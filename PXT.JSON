@@ -1,0 +1,22 @@
+{
+    "name": "serial",
+    "description": "UART communicatoin",
+    "files": [
+        "serial.cpp",
+        "serial.ts",
+        "enums.d.ts",
+        "shims.d.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "dependencies": {
+        "core": "*"
+    },
+    "targetVersions": {
+        "target": "1.4.36"
+    },
+    "icon": "https://pxt.azureedge.net/blob/235fa0b02255259c0fc0b27e4292d8a0d2a4e1e3/static/libs/serial.png",
+    "installedVersion": "embed:serial"
+}
