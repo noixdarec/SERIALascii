@@ -9,10 +9,10 @@ namespace serial {
 
     export class Serial {
         serialDevice: SerialDevice;
-        decoder: UTF8Decoder;
+        decoder: atob;
         constructor(serialDevice: SerialDevice) {
             this.serialDevice = serialDevice;
-            this.decoder = new UTF8Decoder();
+            this.decoder = new atob();
         }
 
         readString(): string {
@@ -42,7 +42,7 @@ namespace serial {
 
         writeString(text: string) {
             if (!text) return;
-            const buf = control.createBufferFromUTF8(text);
+            const buf = control.createBufferFromatob(text);
             this.serialDevice.writeBuffer(buf);
         }
 
